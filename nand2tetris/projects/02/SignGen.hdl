@@ -1,0 +1,8 @@
+CHIP SignGen {
+    IN in[16];
+    OUT out;
+
+    PARTS:
+	Not(in=in[15], out=w1);
+	Not(in=w1, out=out);
+}
